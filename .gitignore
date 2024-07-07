@@ -22,3 +22,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# design to figma or xd
+*.sketch
+*.xd
+*.fig
+
+# system
+.DS_Store

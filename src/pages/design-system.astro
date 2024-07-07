@@ -1,0 +1,442 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Design System">
+  <main>
+    <section>
+      <article class="flex flex-col gap-y-5">
+        <header class="relative py-14 bg-p-midnight-green">
+          <div class="relative max-w-4xl mx-auto">
+            <h2 class="text-p-light-coral font-bold">
+              myteam
+              <span
+                class="block text-5xl font-extrabold leading-none text-white"
+              >
+                Design System
+              </span>
+            </h2>
+          </div>
+        </header>
+
+        <div class="relative max-w-4xl mx-auto">
+          <div class="py-10">
+            <h2
+              class="text-[2.5rem] text-s-acramento-state-green font-bold leading-tight mb-11"
+            >
+              Colors
+            </h2>
+
+            <div class="flex flex-col gap-y-10">
+              <div class="flex flex-row gap-y-5 items-start justify-between">
+                <span
+                  class="text-s-police-blue text-xs font-bold uppercase tracking-[5px]"
+                >
+                  Primary
+                </span>
+
+                <div
+                  class="flex gap-y-10 gap-x-16 flex-wrap justify-start w-full max-w-[60%]"
+                >
+                  <!-- color: Midnight Green -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-p-midnight-green rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold"> Midnight Green </span>
+                      HEX : #014E56 <br /> RGB : rgb(1, 78, 86) <br /> HSL : hsl(186°,
+                      98%, 17%)
+                    </p>
+                  </div>
+                  <!-- color: Light Coral -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-p-light-coral rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold"> Light Coral </span>
+                      HEX : #F67E7E <br />RGB : rgb(246, 126, 126) <br />HSL :
+                      hsl(0°, 87%, 73%)
+                    </p>
+                  </div>
+                  <!-- color: White -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-white border border-slate-200 rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold"> White </span>
+                      HEX : #FFFFFF <br />RGB : rgb(255, 255, 255) <br />HSL :
+                      hsl(0°, 0%, 100%)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-row gap-y-5 items-start justify-between">
+                <span
+                  class="text-s-police-blue text-xs font-bold uppercase tracking-[5px]"
+                >
+                  Secondary
+                </span>
+
+                <div
+                  class="flex gap-y-10 gap-x-16 flex-wrap justify-start w-full max-w-[60%]"
+                >
+                  <!-- color: Rapture Blue -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-s-rapture-blue rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold"> Rapture Blue </span>
+                      HEX : #79C8C7 <br />RGB : rgb(121, 200, 199) <br />HSL :
+                      hsl(179°, 42%, 63%)
+                    </p>
+                  </div>
+                  <!-- color: Police Blue -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-s-police-blue rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold"> Police Blue </span>
+                      HEX : #2C6269 <br />RGB : rgb(44, 98, 105) <br />HSL :
+                      hsl(187°, 41%, 29%)
+                    </p>
+                  </div>
+                  <!-- color: Deep Jungle Green -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-s-deep-jungle-green rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold">
+                        Deep Jungle Green
+                      </span>
+                      HEX : #004047 <br />RGB : rgb(0, 64, 71) <br />HSL :
+                      hsl(186°, 100%, 14%)
+                    </p>
+                  </div>
+                  <!-- color: Sacramento State Green -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-s-acramento-state-green rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold">
+                        Sacramento State Green
+                      </span>
+                      HEX : #012F34 <br />RGB : rgb(1, 47, 52) <br />HSL :
+                      hsl(186°, 96%, 10%)
+                    </p>
+                  </div>
+                  <!-- color: Dark Green -->
+                  <div class="flex flex-col gap-y-4">
+                    <div
+                      class="w-full max-w-14 h-full max-h-14 aspect-square bg-s-dark-green rounded-full"
+                    >
+                    </div>
+
+                    <p class="text-s-dark-green text-xs">
+                      <span class="block mb-1 font-bold"> Dark Green </span>
+                      HEX : #002529 <br />RGB : rgb(0, 37, 41) <br />HSL :
+                      hsl(186°, 100%, 8%)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <div class="py-10">
+            <h2
+              class="text-[2.5rem] text-s-acramento-state-green font-bold leading-tight mb-11"
+            >
+              Typography
+            </h2>
+
+            <div class="flex flex-wrap gap-10">
+              <div class="flex justify-between w-full">
+                <span
+                  class="text-s-police-blue text-xs font-bold uppercase tracking-[5px]"
+                >
+                  Font Family
+                </span>
+
+                <div class="flex items-center w-full max-w-[266px] text-center">
+                  <span
+                    class="py-6 px-8 font-bold text-4xl leading-none text-white bg-[#002529]"
+                  >
+                    Aa
+                  </span>
+                  <div
+                    class="inline-flex justify-center items-center flex-auto h-full font-bold py-6 px-8 text-xs bg-gray-300"
+                  >
+                    Livvic
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-start flex-col flex-1 gap-y-8">
+                <span
+                  class="text-s-police-blue text-xs font-bold uppercase tracking-[5px]"
+                >
+                  Headings
+                </span>
+
+                <aside>
+                  <span class="block mb-4 text-xs">
+                    <strong>H1 (Large),</strong> Livvic Bold, 100px, 100px Line
+                  </span>
+
+                  <div>
+                    <h1 class="text-[100px] font-bold leading-none">
+                      Quick waltz
+                    </h1>
+                  </div>
+                </aside>
+
+                <aside>
+                  <span class="block mb-4 text-xs">
+                    <strong>H1 (Small),</strong> Livvic Bold, 64px, 56px Line
+                  </span>
+
+                  <h1 class="text-[64px] font-bold leading-none">
+                    Quick waltz
+                  </h1>
+                </aside>
+
+                <aside>
+                  <span class="block mb-4 text-xs">
+                    <strong>H2,</strong> Livvic Bold, 48px, 48px Line
+                  </span>
+
+                  <div>
+                    <h2 class="text-5xl font-bold">
+                      Jived fox nymph grabs quick waltz
+                    </h2>
+                  </div>
+                </aside>
+
+                <aside>
+                  <span class="block mb-4 text-xs">
+                    <strong>H3,</strong> Livvic Bold, 18px, 28px Line
+                  </span>
+
+                  <div>
+                    <h3 class="text-lg font-bold">
+                      Jived fox nymph grabs quick waltz
+                    </h3>
+                  </div>
+                </aside>
+              </div>
+
+              <div class="flex justify-start flex-col flex-1 gap-y-8">
+                <span
+                  class="text-s-police-blue text-xs font-bold uppercase tracking-[5px]"
+                >
+                  Body
+                </span>
+
+                <aside>
+                  <span class="block mb-4 text-xs">
+                    <strong>Body 1,</strong> Livvic Semi Bold, 18px, 28px Line
+                  </span>
+
+                  <div>
+                    <p class="text-lg font-semibold">
+                      Sed egestas, ante et vulputate volutpat, eros pede semper
+                      est, vitae luctus metus libero eu augue. Morbi purus
+                      libero, faucibus adipiscing, commodo quis, gravida id,
+                      est. Sed lectus. Praesent elementum hendrerit tortor. Sed
+                      semper lorem at felis. Vestibulum volutpat, lacus a
+                      ultrices sagittis, mi neque. Orbi purus libero, faucibus
+                      adipiscing, commodo quis, gravida id, est. Sed lectus.Sed
+                      egestas, ante et vulputate volutpat, eros pede sempe.
+                    </p>
+                  </div>
+                </aside>
+
+                <aside>
+                  <span class="block mb-4 text-xs">
+                    <strong>Body 2,</strong> Livvic Semi Bold, 15px, 25px Line
+                  </span>
+
+                  <div>
+                    <p class="text-base font-semibold">
+                      Sed egestas, ante et vulputate volutpat, eros pede semper
+                      est, vitae luctus metus libero eu augue. Morbi purus
+                      libero, faucibus adipiscing, commodo quis, gravida id,
+                      est. Sed lectus. Praesent elementum hendrerit tortor. Sed
+                      semper lorem at felis. Vestibulum volutpat, lacus a
+                      ultrices sagittis, mi neque. Orbi purus libero, faucibus
+                      adipiscing, commodo quis, gravida id, est. Sed lectus.Sed
+                      egestas, ante et vulputate volutpat, eros pede sempe.
+                    </p>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="py-10">
+            <h2
+              class="text-[2.5rem] text-s-acramento-state-green font-bold leading-tight mb-11"
+            >
+              Button
+            </h2>
+
+            <div class="flex gap-10 flex-wrap">
+              <div class="flex justify-between flex-col gap-y-3 w-full">
+                <span
+                  class="text-s-police-blue text-xs font-bold uppercase tracking-[5px]"
+                >
+                  Primary
+                </span>
+
+                <div class="flex justify-between gap-x-10">
+                  <aside
+                    class="flex justify-between gap-x-4 flex-auto w-full max-w-[420px]"
+                  >
+                    <div class="flex flex-col justify-between gap-y-4 py-6">
+                      <span class="py-2 border border-transparent"
+                        >Normal State (Light)</span
+                      >
+                      <span class="py-2 border border-transparent"
+                        >Hover State (Light)
+                      </span>
+                      <span class="py-2 border border-transparent"
+                        >Disabled State (Light)</span
+                      >
+                    </div>
+
+                    <div
+                      class="flex flex-col gap-y-4 p-6 bg-s-acramento-state-green rounded-lg"
+                    >
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-white rounded-3xl border-2 border-white"
+                      >
+                        contact us
+                      </button>
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-s-dark-green rounded-3xl border-2 border-white bg-white"
+                      >
+                        contact us
+                      </button>
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-white rounded-3xl border-2 border-white opacity-25"
+                        disabled
+                      >
+                        contact us
+                      </button>
+                    </div>
+                  </aside>
+
+                  <aside
+                    class="flex justify-between gap-x-4 flex-auto w-full max-w-[420px]"
+                  >
+                    <div class="flex flex-col justify-between gap-y-4 py-6">
+                      <span class="py-2 border border-transparent"
+                        >Normal State (Dark)</span
+                      >
+                      <span class="py-2 border border-transparent"
+                        >Hover State (Dark)
+                      </span>
+                      <span class="py-2 border border-transparent"
+                        >Disabled State (Dark)</span
+                      >
+                    </div>
+
+                    <div class="flex flex-col gap-y-4 p-6">
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-s-acramento-state-green rounded-3xl border-2 border-s-acramento-state-green"
+                      >
+                        contact us
+                      </button>
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-white rounded-3xl border-2 border-s-acramento-state-green bg-s-acramento-state-green"
+                      >
+                        contact us
+                      </button>
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-s-acramento-state-green rounded-3xl border-2 border-s-acramento-state-green opacity-25"
+                        disabled
+                      >
+                        contact us
+                      </button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+
+              <div class="flex justify-between flex-col gap-y-3 w-full">
+                <span
+                  class="text-s-police-blue text-xs font-bold uppercase tracking-[5px]"
+                >
+                  Secondary
+                </span>
+
+                <div class="flex justify-between gap-x-10">
+                  <aside
+                    class="flex justify-between gap-x-4 flex-auto w-full max-w-[420px]"
+                  >
+                    <div class="flex flex-col justify-between gap-y-4 py-6">
+                      <span class="py-2 border border-transparent"
+                        >Normal State (Light)</span
+                      >
+                      <span class="py-2 border border-transparent"
+                        >Hover State (Light)
+                      </span>
+                      <span class="py-2 border border-transparent"
+                        >Disabled State (Light)</span
+                      >
+                    </div>
+
+                    <div
+                      class="flex flex-col gap-y-4 p-6 bg-s-acramento-state-green rounded-lg"
+                    >
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-s-dark-green rounded-3xl border-2 border-white bg-white"
+                      >
+                        contact us
+                      </button>
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-s-dark-green rounded-3xl border-2 border-s-rapture-blue bg-s-rapborder-s-rapture-blue bg-s-rapture-blue"
+                      >
+                        contact us
+                      </button>
+                      <button
+                        class="px-8 py-2 font-semibold text-lg text-s-dark-green rounded-3xl border-2 border-white bg-s-rapborder-white bg-white opacity-25"
+                        disabled
+                      >
+                        contact us
+                      </button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</Layout>

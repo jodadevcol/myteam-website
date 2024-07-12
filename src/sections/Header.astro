@@ -1,0 +1,30 @@
+---
+import ActionButton from "../components/ActionButton.astro";
+import MyTeam from "../icons/MyTeam.astro";
+---
+
+<header class="sticky top-0 left-0 right-0 mx-auto max-w-6xl pt-16 pb-3 px-5">
+  <div class="flex items-center gap-x-20 text-white">
+    <a href="/" class="block w-full max-w-40">
+      <MyTeam />
+    </a>
+
+    <nav class="w-full">
+      <ul class="flex justify-start items-center gap-x-8">
+        <li>
+          <a href="/"> <span>home</span> </a>
+        </li>
+
+        <li>
+          <a href="/about"> <span>about</span> </a>
+        </li>
+
+        <li class="ml-auto">
+          <ActionButton variant="primaryLight" href="/contact-us">
+            <span>contact us</span>
+          </ActionButton>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

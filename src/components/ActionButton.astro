@@ -1,0 +1,23 @@
+---
+interface Props {
+  variant: keyof typeof variantClasess;
+  href?: string;
+}
+
+const { variant, ...props } = Astro.props;
+
+const variantClasess = {
+  primaryLight: "text-white border-white",
+  primaryDark: "text-s-acramento-state-green border-s-acramento-state-green",
+  secondaryLigth: "text-s-dark-green border-white bg-white",
+};
+
+const standartClasess =
+  "px-8 py-2 font-semibold text-lg rounded-3xl border-2 border";
+
+const mergeClass = [standartClasess, variantClasess[variant]];
+---
+
+<a class:list={mergeClass} {...props}>
+  <slot />
+</a>

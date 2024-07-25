@@ -29,10 +29,12 @@ const { title } = Astro.props;
 		<Header />
 
 		<div
-			class="mx-auto min-h-screen max-w-6xl selection:bg-p-midnight-green selection:text-s-dark-green"
+			class="mx-auto min-h-screen max-w-6xl px-5 selection:bg-p-midnight-green selection:text-s-dark-green"
 			id="main-content"
 		>
-			<slot />
+			<main>
+				<slot />
+			</main>
 		</div>
 
 		<Footer />

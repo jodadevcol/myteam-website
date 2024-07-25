@@ -1,9 +1,49 @@
 ---
+import Typography from "../components/Typography.astro";
 import Layout from "../layouts/Layout.astro";
-import MyTeam from "../icons/MyTeam.astro";
-import ActionButton from "../components/ActionButton.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main></main>
+	<section class="relative">
+		<div class="flex items-center justify-center min-h-screen py-14">
+			<article class="flex gap-x-8 justify-between items-end w-full">
+				<div>
+					<Typography as="h1" variant="h1" color="white">
+						Find the <br />best <span class="text-p-light-coral">talent</span>
+					</Typography>
+				</div>
+				<header class="max-w-md">
+					<Typography as="p" variant="p" color="white">
+						Finding the right people and building high performing teams can be
+						hard. Most companies aren’t tapping into the abundance of global
+						talent. We’re about to change that.
+					</Typography>
+				</header>
+			</article>
+		</div>
+
+		<div class="pointer-events-none absolute bottom-0 right-2">
+			<svg xmlns="http://www.w3.org/2000/svg" width="358" height="100">
+				<g fill="none" fill-rule="evenodd">
+					<circle cx="100" cy="100" r="100" fill="#2C6269"> </circle>
+					<path
+						fill="#012F34"
+						d="M258 0c55.228 0 100 44.772 100 100s-44.772 100-100 100-100-44.772-100-100S202.772 0 258 0zm0 67c-18.225 0-33 14.775-33 33s14.775 33 33 33 33-14.775 33-33-14.775-33-33-33z"
+					>
+					</path>
+					<path fill="#79C8C7" d="M358 43h-43V0h43z"> </path>
+					<path
+						fill="#F67E7E"
+						d="M233.514 0c55.228 0 100 44.772 100 100s-44.772 100-100 100c-55.229 0-100-44.772-100-100s44.771-100 100-100zm0 67c-18.226 0-33 14.775-33 33s14.774 33 33 33c18.225 0 33-14.775 33-33s-14.775-33-33-33z"
+					>
+					</path>
+					<path
+						fill="#79C8C7"
+						d="M100 40v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0V8h100zm0-8v4H0V0h100z"
+					>
+					</path>
+				</g>
+			</svg>
+		</div>
+	</section>
 </Layout>

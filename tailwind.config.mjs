@@ -9,7 +9,7 @@ export default {
 				"s-rapture-blue": "var(--s-rapture-blue)",
 				"s-police-blue": "var(--s-police-blue)",
 				"s-deep-jungle-green": "var(--s-deep-jungle-green)",
-				"s-acramento-state-green ": "var(--s-acramento-state-green )",
+				"s-acramento-state-green": "var(--s-acramento-state-green )",
 				"s-dark-green": "var(--s-dark-green)",
 			}
 		},

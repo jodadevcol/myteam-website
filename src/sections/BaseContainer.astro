@@ -1,0 +1,33 @@
+---
+interface Props {
+  classSection?: string;
+  classContainer?: string;
+  colorBg: keyof typeof colorClasess;
+}
+
+const { classSection, classContainer, colorBg } = Astro.props;
+
+const colorClasess = {
+  base: "bg-p-midnight-green text-white",
+  deepJungle: "bg-s-deep-jungle-green tet-white",
+  acramento: "bg-s-acramento-state-green text-white",
+};
+
+const sectionStyle = [
+  "relative",
+  classSection,
+  colorClasess[colorBg as keyof typeof colorClasess],
+];
+
+const containerStyle = ["mx-auto max-w-6xl px-5 py-36", classContainer];
+---
+
+<section class:list={sectionStyle}>
+  <slot name="beforeContent" />
+
+  <div class:list={containerStyle}>
+    <slot />
+  </div>
+
+  <slot name="afterContent" />
+</section>

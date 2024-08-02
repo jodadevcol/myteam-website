@@ -1,0 +1,47 @@
+---
+import Typography from "../components/Typography.astro";
+import Layout from "../layouts/Layout.astro";
+import BaseContainer from "../sections/BaseContainer.astro";
+import IntroContainer from "../sections/IntroContainer.astro";
+import FlipCard from "../components/FlipCard.astro";
+import directors from "../data/directors.json";
+
+console.log(directors);
+---
+
+<Layout title="About page">
+  <IntroContainer colorBg="base">
+    <article class="flex gap-x-8 justify-between items-end w-full">
+      <div class="max-w-[40%]">
+        <Typography as="h1" variant="h1-small" color="white">
+          About
+        </Typography>
+      </div>
+      <header class="max-w-[60%]">
+        <Typography as="p" variant="p" color="white">
+          We help companies build dynamic teams made up of top global talent.
+          Using our network of passionate professionals we drive innovation and
+          deliver incredible outcomes. Talented, diverse teams shape the best
+          products and experiences. We’ll bring those teams to you.
+        </Typography>
+      </header>
+    </article>
+  </IntroContainer>
+
+  <BaseContainer colorBg="deepJungle">
+    <article class="text-center">
+      <header class="mb-16">
+        <Typography as="h2" variant="h2" color="white"
+          >Meet the directors
+        </Typography>
+      </header>
+
+      <section
+        class="grid gap-y-14 gap-x-7 items-center justify-center"
+        style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));"
+      >
+        <FlipCard />
+      </section>
+    </article>
+  </BaseContainer>
+</Layout>

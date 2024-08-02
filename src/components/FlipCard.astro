@@ -1,0 +1,62 @@
+---
+import Close from "../icons/Close.astro";
+import Cross from "../icons/Cross.astro";
+import Linkedin from "../icons/Linkedin.astro";
+import Twitter from "../icons/Twitter.astro";
+import Typography from "./Typography.astro";
+---
+
+<article class="relative w-full max-w-full">
+  <div class="w-full min-w-60 h-auto min-h-60 bg-s-acramento-state-green">
+    <!-- Front of Card -->
+    <div class="px-6 pt-8 pb-14">
+      <header class="mb-4">
+        <picture
+          class="block w-24 aspect-auto mx-auto rounded-full overflow-hidden border-2 border-s-rapture-blue"
+        >
+          <img
+            class="w-full object-cover"
+            src="/images/avatars/avatar-nikita.jpg"
+            alt=""
+          />
+        </picture>
+      </header>
+
+      <Typography as="h3" variant="h3" color="rapture">
+        Nikita Marks
+      </Typography>
+      <span class="text-sm italic text-white"> Founder & CEO </span>
+    </div>
+
+    <!-- Back of Card -->
+    <div class="hidden">
+      <footer>
+        <div>
+          <Typography as="p" variant="p" color="white">
+            “It always amazes me how much talent there is in every corner of the
+            globe.”
+          </Typography>
+
+          <div>
+            <a href="#"><Twitter /></a>
+            <a href="#"><Linkedin /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="absolute -bottom-7 left-1/2 -translate-x-1/2">
+    <button
+      class="flex items-center justify-center w-14 h-14 p-4 rounded-full bg-p-light-coral"
+    >
+      <div class="block">
+        <Cross />
+      </div>
+
+      <div class="hidden">
+        <Close />
+      </div>
+    </button>
+  </div>
+</article>

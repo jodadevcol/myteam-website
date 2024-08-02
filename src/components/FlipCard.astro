@@ -1,12 +1,24 @@
 ---
+import type { Avatar, Director, Social } from "../env";
 import Close from "../icons/Close.astro";
 import Cross from "../icons/Cross.astro";
 import Linkedin from "../icons/Linkedin.astro";
 import Twitter from "../icons/Twitter.astro";
 import Typography from "./Typography.astro";
+
+interface Props {
+  id: string;
+  name: string;
+  charge: string;
+  description: string;
+  avatar: Avatar;
+  social: Social;
+}
+
+const { id, name, charge, description, avatar, social } = Astro.props;
 ---
 
-<article class="relative w-full max-w-full">
+<article class="relative w-full max-w-full" data-id-director={id}>
   <div class="w-full min-w-60 h-auto min-h-60 bg-s-acramento-state-green">
     <!-- Front of Card -->
     <div class="px-6 pt-8 pb-14">
@@ -16,26 +28,24 @@ import Typography from "./Typography.astro";
         >
           <img
             class="w-full object-cover"
-            src="/images/avatars/avatar-nikita.jpg"
+            src={`/images/avatars/${avatar.img}`}
             alt=""
           />
         </picture>
       </header>
 
       <Typography as="h3" variant="h3" color="rapture">
-        Nikita Marks
+        {name}
       </Typography>
-      <span class="text-sm italic text-white"> Founder & CEO </span>
+      <span class="text-sm italic text-white"> {charge} </span>
     </div>
 
     <!-- Back of Card -->
     <div class="hidden">
       <footer>
         <div>
-          <Typography as="p" variant="p" color="white">
-            “It always amazes me how much talent there is in every corner of the
-            globe.”
-          </Typography>
+          <Typography as="p" variant="p" color="white">{description}</Typography
+          >
 
           <div>
             <a href="#"><Twitter /></a>

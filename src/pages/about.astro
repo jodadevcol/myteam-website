@@ -4,9 +4,11 @@ import Layout from "../layouts/Layout.astro";
 import BaseContainer from "../sections/BaseContainer.astro";
 import IntroContainer from "../sections/IntroContainer.astro";
 import FlipCard from "../components/FlipCard.astro";
-import directors from "../data/directors.json";
+import dataDirectors from "../data/directors.json";
 
-console.log(directors);
+import type { Director } from "../env.d.ts";
+
+const { directors } = dataDirectors;
 ---
 
 <Layout title="About page">
@@ -40,7 +42,18 @@ console.log(directors);
         class="grid gap-y-14 gap-x-7 items-center justify-center"
         style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));"
       >
-        <FlipCard />
+        {
+          directors.map((director: Director) => (
+            <FlipCard
+              id={director.id}
+              name={director.name}
+              charge={director.charge}
+              description={director.description}
+              avatar={director.avatar}
+              social={director.social}
+            />
+          ))
+        }
       </section>
     </article>
   </BaseContainer>

@@ -1,0 +1,88 @@
+{
+  "directors": [
+    {
+      "id": "29de02ea-c507-45ec-8f67-42ef6f0c4179",
+      "name": "Nikita Marks",
+      "charge": "Founder & CEO",
+      "description": "“It always amazes me how much talent there is in every corner of the globe.”",
+      "avatar": {
+        "id": "nikita",
+        "img": "avatar-nikita.jpg"
+      },
+      "social": {
+        "twitter": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": "6f897367-de42-45a0-9ac6-ea017b22cc96",
+      "name": "Cristian Duncan",
+      "charge": "Co-founder & COO",
+      "description": "“Distributed teams required unique processes. You need to approach work in a new way.”",
+      "avatar": {
+        "id": "christian",
+        "img": "avatar-christian.jpg"
+      },
+      "social": {
+        "twitter": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": "356d4246-7795-4c57-a54a-862601ecdf5a",
+      "name": "Cruz Hamer",
+      "charge": "Co-founder & CTO",
+      "description": "“Technology is at the forefront of enabling distributed teams. That's where we come in.”",
+      "avatar": {
+        "id": "cruz",
+        "img": "avatar-cruz.jpg"
+      },
+      "social": {
+        "twitter": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": "2b67bc99-7f71-445c-b923-20b82e9a8f1f",
+      "name": "Drake Heaton",
+      "charge": "Business Development Lead",
+      "description": "“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”",
+      "avatar": {
+        "id": "drake",
+        "img": "avatar-drake.jpg"
+      },
+      "social": {
+        "twitter": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": "89364efe-39fb-4057-b75c-0dc218c4583a",
+      "name": "Griffin Wise",
+      "charge": "Lead Marketing",
+      "description": "“Unique perspectives shape unique products, which is what you need to survive these days.”",
+      "avatar": {
+        "id": "griffin",
+        "img": "avatar-griffin.jpg"
+      },
+      "social": {
+        "twitter": "",
+        "linkedin": ""
+      }
+    },
+    {
+      "id": "f3468482-8f1d-452a-a646-77cca67545c7",
+      "name": "Aden Allan",
+      "charge": "Head of Talent",
+      "description": "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+      "avatar": {
+        "id": "aden",
+        "img": "avatar-aden.jpg"
+      },
+      "social": {
+        "twitter": "",
+        "linkedin": ""
+      }
+    }
+  ]
+}

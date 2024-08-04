@@ -8,6 +8,34 @@ import dataDirectors from "../data/directors.json";
 
 import type { Director } from "../env.d.ts";
 
+const clients = [
+  {
+    id: "5",
+    name: "The Verge",
+    logo: "the-verge.png",
+  },
+  {
+    id: "2",
+    name: "Jakarta Post",
+    logo: "jakarta-post.png",
+  },
+  {
+    id: "4",
+    name: "The Guardian",
+    logo: "the-guardian.png",
+  },
+  {
+    id: "3",
+    name: "Tech Radar",
+    logo: "tech-radar.png",
+  },
+  {
+    id: "1",
+    name: "Gadgets Now",
+    logo: "gadgets-now.png",
+  },
+];
+
 const { directors } = dataDirectors;
 ---
 
@@ -55,6 +83,32 @@ const { directors } = dataDirectors;
           ))
         }
       </section>
+    </article>
+  </BaseContainer>
+
+  <BaseContainer colorBg="acramento">
+    <article class="text-center">
+      <header class="mb-16">
+        <Typography as="h2" variant="h2" color="white">
+          Some of our cliients
+        </Typography>
+      </header>
+
+      <div
+        class="flex flex-wrap items-center justify-center lg:justify-between gap-5 py-6"
+      >
+        {
+          clients.map((client) => (
+            <picture>
+              <img
+                src={`/images/clients/${client.logo}`}
+                alt={client.name}
+                class="w-auto max-w-40 lg:max-w-44 max-h-10"
+              />
+            </picture>
+          ))
+        }
+      </div>
     </article>
   </BaseContainer>
 </Layout>
